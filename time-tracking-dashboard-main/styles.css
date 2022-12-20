@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;700&display=swap');
+
+.body{
+    margin: 0;
+    padding: 0;
+    /* background-color: hsl(226, 43%, 10%); */
+}
+html{
+    background-color: hsl(226, 43%, 10%);
+    font-family: 'Nunito', sans-serif;
+}
+*{
+    box-sizing: border-box;
+    color: white;
+}
+p, h5, h1{
+    margin: 0;
+    padding: 0;
+}
+
+
+.main-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-inline: auto;
+    margin-block: 7rem;
+    width:60vw;
+    height: auto;
+    gap: 1rem;
+    padding: 1rem;
+    /* flex-wrap: wrap; */
+    overflow: hidden;
+}
+.side-bar, .card-content{
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 10px;
+}
+.grid-container{
+    display: grid;
+    width: 70%;
+    grid-template-columns: repeat(auto-fit,
+        minmax(160px, 1fr));
+    gap: 1rem;
+    overflow: hidden;
+}
+.cards{
+    border-radius: 10px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-top: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.work{
+    background-color: hsl(15, 100%, 70%);
+}
+.play{
+    background-color: hsl(195, 74%, 62%);
+}
+.study{
+    background-color: hsl(348, 100%, 68%);
+}
+.exercise{
+    background-color: hsl(145, 58%, 55%);
+}
+.social{
+    background-color: hsl(264, 64%, 52%);
+}
+.self-care{
+    background-color: hsl(43, 84%, 65%);
+}
+.card-content{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    transition: background-color 0.5s;
+    z-index: 1;
+    /* border-top: 35px solid hsl(15, 100%, 70%); */
+    /* border-color: hsl(15, 100%, 70%); */
+}
+
+.work-heading{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items:center;
+    font-size: 18px;
+}
+.work-heading > p{
+    color: hsl(236, 100%, 87%);
+    font-size: 20px;
+}
+.work-heading>p:hover {
+    color: white;
+
+}
+.hours{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.hours > h1{
+    font-size: 3rem;
+    font-weight:lighter;
+}
+.hours > span > h5{
+    color: hsl(236, 100%, 87%);
+    font-weight: lighter;
+}
+
+.card-content:hover{
+    background-color: hsl(235, 45%, 61%);
+    cursor: pointer;
+}
+
+.icon{
+    width: 50px;
+    height: 45px;
+    position: absolute;
+    top: -5px;
+    right: 10px;
+    z-index: 1;
+}
+
+.side-bar{
+    /* padding: 1.5rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.user{
+    background-color: hsl(235, 75%, 64%);
+    position: relative;
+    height: 70%;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.user-img > img{
+    height: 75px;
+    width: 75px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+.user-details{
+    padding-top: 80px;
+    line-height: 35px;
+}
+.user-details > p{
+    font-size: 16px;
+}
+.user-details > h1{
+    font-weight: lighter;
+}
+.options{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-grow: 1;
+    padding-inline: 1.5rem;
+    padding-block: 0.5rem;
+    font-size: 13px;
+}
+
+.daily, .weekly, .monthly{
+    color: hsl(236, 100%, 87%);
+}
+
+.options p:hover{
+    /* color: white; */
+    cursor: pointer;
+}
+.active{
+    font-size: 15px;
+    color: white;
+}
+
+@media screen and (max-width: 990px ) {
+
+    .main-container{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .grid-container, .user{
+        flex: 1fr;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:900px){
+    
+    .options{
+        flex-direction: row;
+    }
+
+    .hours{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .hours h1{
+        font-size: 25px;
+    }
+    .hours span{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .main-container{
+        width: 100%;
+    }
+    .grid-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

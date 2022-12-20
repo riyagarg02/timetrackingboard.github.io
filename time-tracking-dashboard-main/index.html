@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+    <div class="main-container">
+      <div class="side-bar">
+        <div class="user">
+          <div class="user-img">
+            <img src="./images/image-jeremy.png" alt="">
+          </div>
+          <div class="user-details">
+            <p>Report for</p>
+            <h1>Jeremy</h1>
+            <h1>Robson</h1>
+          </div>
+        </div>
+        <div class="options">
+          <p id="daily" class="daily">Daily</p>
+          <p id="weekly" class="active weekly">Weekly</p>
+          <p id="monthly" class="monthly">Monthly</p>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <!-- first-card -->
+        <div class="cards work" id="work">
+          <img src="./images/icon-work.svg" alt="" class="icon">
+          <div class="card-content ">
+            <span class="work-heading">
+              <h5>Work</h5>
+              <p>...</p>
+            </span>
+            <div class="hours">
+              <h1 class="current">32hrs</h1>
+              <span><h5 class="previous">Last week - 36hrs</h5></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- second-card -->
+        <div class="cards play">
+          <img src="./images/icon-play.svg" alt="" class="icon">
+          <div class="card-content">
+            <span class="work-heading">
+              <h5>Play</h5>
+              <p>...</p>
+            </span>
+            <div class="hours">
+              <h1 class="current">32hrs</h1>
+              <span>
+                <h5 class="previous">Last week - 36hrs</h5>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- third-card -->
+        <div class="cards study">
+          <img src="./images/icon-study.svg" alt="" class="icon">
+          <div class="card-content">
+            <span class="work-heading">
+              <h5>Study</h5>
+              <p>...</p>
+            </span>
+            <div class="hours">
+              <h1 class="current">32hrs</h1>
+              <span>
+                <h5 class="previous">Last week - 36hrs</h5>
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- fourth-card -->
+        <div class="cards exercise">
+          <img src="./images/icon-exercise.svg" alt="" class="icon">
+          <div class="card-content">
+            <span class="work-heading">
+              <h5>Exercise</h5>
+              <p>...</p>
+            </span>
+            <div class="hours">
+              <h1 class="current">32hrs</h1>
+              <span><h5 class="previous">Last week - 36hrs</h5></span>
+            </div>
+          </div>
+        </div>
+        <!-- fifth-card -->
+        <div class="cards social">
+          <img src="./images/icon-social.svg" alt="" class="icon">
+          <div class="card-content">
+            <span class="work-heading">
+              <h5>Social</h5>
+              <p>...</p>
+            </span>
+            <div class="hours">
+              <h1 class="current">32hrs</h1>
+              <span>
+                <h5 class="previous">Last week - 36hrs</h5>
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- sixth-card -->
+        <div class="cards self-care">
+          <img src="./images/icon-self-care.svg" class="icon" alt="">
+          <div class="card-content">
+            <span class="work-heading">
+              <h5>Self-Care</h5>
+              <p>...</p>
+            </span>
+            <div class="hours">
+              <h1 class="current">32hrs</h1>
+              <span>
+                <h5 class="previous">Last week - 36hrs</h5>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="app.js"></script>
+</body>
+</html>
